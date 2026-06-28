@@ -1,0 +1,140 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json",
+  "actions": [
+    {
+      "verb": "createSPList",
+      "listName": "Training Assets",
+      "templateType": 101,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Central document library for training module assets including slides, videos, and interactive applications."
+        }
+      ]
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Service Records",
+      "templateType": 100,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Field service verification log for technician compliance records."
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Technician Name",
+          "internalName": "TechnicianName",
+          "isRequired": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "DateTime",
+          "displayName": "Service Date",
+          "internalName": "ServiceDate",
+          "isRequired": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Location",
+          "internalName": "Location",
+          "isRequired": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Cartridge Type",
+          "internalName": "CartridgeType",
+          "isRequired": false
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Number",
+          "displayName": "Pressure Reading (PSI)",
+          "internalName": "PressureReading",
+          "isRequired": false
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Note",
+          "displayName": "Notes",
+          "internalName": "Notes",
+          "isRequired": false
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Choice",
+          "displayName": "Status",
+          "internalName": "Status",
+          "isRequired": true,
+          "choices": ["Pass", "Fail", "Pending Review"]
+        }
+      ]
+    },
+    {
+      "verb": "createSPList",
+      "listName": "Training Completions",
+      "templateType": 100,
+      "subactions": [
+        {
+          "verb": "setDescription",
+          "description": "Registry of employee training completion records and certification dates."
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Employee Name",
+          "internalName": "EmployeeName",
+          "isRequired": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Employee ID",
+          "internalName": "EmployeeID",
+          "isRequired": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "DateTime",
+          "displayName": "Completion Date",
+          "internalName": "CompletionDate",
+          "isRequired": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Number",
+          "displayName": "Assessment Score (%)",
+          "internalName": "AssessmentScore",
+          "isRequired": true
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Choice",
+          "displayName": "Certification Status",
+          "internalName": "CertificationStatus",
+          "isRequired": true,
+          "choices": ["Certified", "Failed - Retake Required", "In Progress", "Expired"]
+        },
+        {
+          "verb": "addSPField",
+          "fieldType": "Text",
+          "displayName": "Supervisor",
+          "internalName": "Supervisor",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "verb": "applyTheme",
+      "themeName": "SOP Training Dark Professional"
+    },
+    {
+      "verb": "setSiteExternalSharingCapability",
+      "capability": "ExistingExternalUserSharingOnly"
+    }
+  ],
+  "version": 1
+}

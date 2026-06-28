@@ -1,0 +1,22 @@
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# PowerShell
+*.ps1xml
+
+# Temporary
+*.tmp
+*.bak
+support_bundle_*.zip

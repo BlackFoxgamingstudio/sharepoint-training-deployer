@@ -1,0 +1,118 @@
+{
+  "pageTemplate": "media_page",
+  "fileName": "Media-Resources.aspx",
+  "title": "Media & Resources — {{MODULE_TITLE}}",
+  "headerLayout": "Plain",
+  "sections": [
+    {
+      "order": 1,
+      "template": "OneColumn",
+      "zoneEmphasis": 0,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h2>📸 SOP Slide Presentation</h2><p>Review the complete 18-slide training deck below. Each slide covers a critical phase of the maintenance procedure with detailed diagrams and step-by-step visuals.</p>"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "template": "ThreeColumn",
+      "zoneEmphasis": 1,
+      "webParts": [
+        {
+          "type": "image",
+          "column": 1,
+          "imageUrl": "{{SITE_URL}}/Training Assets/{{MODULE_NAME}}/slides/slide_01.png",
+          "altText": "Slide 1 - Title & Overview"
+        },
+        {
+          "type": "image",
+          "column": 2,
+          "imageUrl": "{{SITE_URL}}/Training Assets/{{MODULE_NAME}}/slides/slide_05.png",
+          "altText": "Slide 5 - System Isolation"
+        },
+        {
+          "type": "image",
+          "column": 3,
+          "imageUrl": "{{SITE_URL}}/Training Assets/{{MODULE_NAME}}/slides/slide_10.png",
+          "altText": "Slide 10 - Cartridge Replacement"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "template": "ThreeColumn",
+      "zoneEmphasis": 1,
+      "webParts": [
+        {
+          "type": "image",
+          "column": 1,
+          "imageUrl": "{{SITE_URL}}/Training Assets/{{MODULE_NAME}}/slides/slide_14.png",
+          "altText": "Slide 14 - O-Ring Verification"
+        },
+        {
+          "type": "image",
+          "column": 2,
+          "imageUrl": "{{SITE_URL}}/Training Assets/{{MODULE_NAME}}/slides/slide_16.png",
+          "altText": "Slide 16 - Recommissioning"
+        },
+        {
+          "type": "image",
+          "column": 3,
+          "imageUrl": "{{SITE_URL}}/Training Assets/{{MODULE_NAME}}/slides/slide_18.png",
+          "altText": "Slide 18 - Compliance Summary"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "template": "OneColumn",
+      "zoneEmphasis": 0,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<p>📁 <strong>All 18 slides</strong> are available in the <a href='Training Assets/{{MODULE_NAME}}/slides'>Slides Library</a> for download and offline review.</p>"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "template": "OneColumn",
+      "zoneEmphasis": 2,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h2>🎥 Procedure Demonstration Video</h2><p>Watch the complete procedure demonstration video below. This recording walks through every phase of the maintenance procedure with real equipment.</p>"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "template": "OneColumn",
+      "zoneEmphasis": 0,
+      "webParts": [
+        {
+          "type": "fileAndMedia",
+          "column": 1,
+          "fileUrl": "{{SITE_URL}}/Training Assets/{{MODULE_NAME}}/video/procedure_video.mp4"
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "template": "OneColumn",
+      "zoneEmphasis": 1,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h2>🎯 Interactive Training Application</h2><p>The full interactive training experience includes a live pressure simulator, animated procedure walkthrough, knowledge assessment quiz, and printable completion certificate.</p><p><a href='{{APP_URL}}/index.html' target='_blank' style='font-weight: bold;'>▶ Launch Full Interactive Training App</a></p>"
+        }
+      ]
+    }
+  ]
+}

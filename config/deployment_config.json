@@ -1,0 +1,84 @@
+{
+  "tenantUrl": "https://YOUR_TENANT.sharepoint.com",
+  "sitePrefix": "sites/training",
+  "defaultSiteType": "CommunicationSite",
+  "defaultSiteDesign": "Topic",
+  "defaultTimeZone": 13,
+  "defaultLocaleId": 1033,
+
+  "branding": {
+    "themeName": "SOP Training Dark Professional",
+    "theme": {
+      "themePrimary": "#00f0ff",
+      "themeLighterAlt": "#000a0a",
+      "themeLighter": "#002929",
+      "themeLight": "#004d4d",
+      "themeTertiary": "#009999",
+      "themeSecondary": "#00dbdb",
+      "themeDarkAlt": "#1af2ff",
+      "themeDark": "#40f5ff",
+      "themeDarker": "#73f7ff",
+      "neutralLighterAlt": "#0b1528",
+      "neutralLighter": "#0f1a30",
+      "neutralLight": "#17233c",
+      "neutralQuaternaryAlt": "#1d2a45",
+      "neutralQuaternary": "#22304c",
+      "neutralTertiaryAlt": "#3a4d6e",
+      "neutralTertiary": "#94a3b8",
+      "neutralSecondary": "#b0bec5",
+      "neutralPrimaryAlt": "#c8d2db",
+      "neutralPrimary": "#f1f5f9",
+      "neutralDark": "#e2e8f0",
+      "black": "#f8fafc",
+      "white": "#030712"
+    },
+    "siteLogoFileName": "favicon.svg"
+  },
+
+  "documentLibrary": {
+    "rootFolder": "Training Assets",
+    "subfolders": ["slides", "video", "app"]
+  },
+
+  "serviceRecordsList": {
+    "listName": "Service Records",
+    "columns": [
+      { "name": "TechnicianName", "type": "Text", "required": true },
+      { "name": "ServiceDate", "type": "DateTime", "required": true },
+      { "name": "Location", "type": "Text", "required": true },
+      { "name": "CartridgeType", "type": "Text", "required": false },
+      { "name": "PressureReading", "type": "Number", "required": false },
+      { "name": "Notes", "type": "Note", "required": false },
+      { "name": "Status", "type": "Choice", "required": true, "choices": ["Pass", "Fail", "Pending Review"] }
+    ]
+  },
+
+  "pages": {
+    "homePage": "Home.aspx",
+    "procedurePage": "Procedure-Guide.aspx",
+    "mediaPage": "Media-Resources.aspx",
+    "assessmentPage": "Assessment.aspx",
+    "fieldLogsPage": "Field-Logs.aspx"
+  },
+
+  "navigation": [
+    { "title": "Home", "url": "Home.aspx" },
+    { "title": "Procedure Guide", "url": "Procedure-Guide.aspx" },
+    { "title": "Media & Resources", "url": "Media-Resources.aspx" },
+    { "title": "Assessment", "url": "Assessment.aspx" },
+    { "title": "Field Logs", "url": "Field-Logs.aspx" }
+  ],
+
+  "logging": {
+    "logDirectory": "logs",
+    "logLevel": "Info",
+    "retainDays": 90
+  },
+
+  "metadata": {
+    "version": "1.0.0",
+    "author": "SBB Training Engineering",
+    "created": "2026-06-28",
+    "description": "SharePoint Training Site Deployer — Automated deployment of interactive training sites to SharePoint Online."
+  }
+}

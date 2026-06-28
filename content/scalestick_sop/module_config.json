@@ -1,0 +1,148 @@
+{
+  "moduleName": "scalestick_sop",
+  "version": "1.0.0",
+  "created": "2026-06-28",
+  "author": "SBB Training Engineering",
+
+  "siteSettings": {
+    "title": "SS-10 ScaleStick™ Maintenance SOP",
+    "description": "Interactive training site for the SS-10 ScaleStick cartridge replacement standard operating procedure. Covers safety protocols, step-by-step procedure simulation, compliance assessment, and field verification logging.",
+    "siteUrlSuffix": "training-scalestick-sop",
+    "category": "Water Treatment — Maintenance & Compliance"
+  },
+
+  "content": {
+    "executiveSummary": "The SS-10 ScaleStick™ is a commercial-grade scale inhibition system designed for water treatment applications in food service, hospitality, and industrial environments. Proper maintenance of the filtration cartridge is critical to system performance, equipment longevity, and regulatory compliance. This training module provides the complete standard operating procedure for cartridge replacement, including system isolation, cartridge extraction, O-ring verification, and system recommissioning.",
+
+    "safetyHazards": [
+      "High-pressure water system (up to 125 PSI) — risk of forceful water discharge",
+      "Chemical exposure from scale inhibitor media and residual water treatment compounds",
+      "Slipping hazard from water discharge during housing removal",
+      "Pinch points during housing reassembly if cross-threaded"
+    ],
+
+    "requiredTools": [
+      "SS-10 replacement filter cartridge (verify model compatibility)",
+      "Filter housing wrench (spanner type, included with unit)",
+      "O-ring lubricant (food-grade silicone, NSF-61 certified)",
+      "Replacement O-ring gasket (3.5\" ID x 4.0\" OD)",
+      "Bucket or drainage pan (minimum 2-gallon capacity)",
+      "Clean lint-free cloths or shop towels",
+      "Adjustable wrench (for inlet/outlet fittings if needed)",
+      "Pressure gauge verification tool (optional)"
+    ],
+
+    "procedures": {
+      "phase1": {
+        "title": "System Isolation & Depressurization",
+        "steps": [
+          "Close the inlet valve — rotate upstream shutoff clockwise until fully closed",
+          "Relieve system pressure — open the pressure relief button/valve",
+          "Open the nearest downstream fixture to bleed remaining pressure",
+          "Verify depressurization — gauge must read 0 PSI",
+          "Position drainage pan beneath the filter housing"
+        ]
+      },
+      "phase2": {
+        "title": "Cartridge Extraction",
+        "steps": [
+          "Unscrew the filter housing using the spanner wrench (counter-clockwise)",
+          "Remove the housing — pull straight down carefully",
+          "Extract the old cartridge — lift straight up, note flow direction",
+          "Inspect the housing interior for cracks or deposits",
+          "Inspect the O-ring seat for debris or scoring"
+        ]
+      },
+      "phase3": {
+        "title": "New Cartridge Installation & O-Ring Verification",
+        "steps": [
+          "Inspect the new cartridge — verify model number and condition",
+          "Remove and inspect the existing O-ring",
+          "Lubricate the O-ring with food-grade silicone",
+          "Seat the O-ring correctly — flat, no twists or pinches",
+          "Insert the new cartridge with flow arrow pointing UP",
+          "Hand-tighten the housing — 1/4 turn past finger-tight, NO wrench"
+        ]
+      },
+      "phase4": {
+        "title": "System Recommissioning",
+        "steps": [
+          "Close the relief valve",
+          "SLOWLY open the inlet valve — no more than 1/4 turn initially",
+          "Purge trapped air — wait until steady flow with no sputtering",
+          "Fully open the inlet valve once air is purged",
+          "Check for leaks — inspect all connections for 5 minutes",
+          "Verify system pressure — should return to normal range (40-80 PSI)",
+          "Record the service in the Field Verification Log"
+        ]
+      }
+    },
+
+    "quizQuestions": [
+      {
+        "question": "What is the primary operational consequence of mineral scale build-up inside commercial water lines?",
+        "options": [
+          "Decreases water pressure to 0 PSI immediately",
+          "Acts as a thermal insulator, increasing energy consumption and causing potential equipment failure",
+          "Changes the water taste to highly acidic",
+          "Increases filter cartridge lifespan by trapping sediment"
+        ],
+        "correctIndex": 1,
+        "explanation": "Scale acts as a thermal insulator which reduces heating efficiency and blocks water lines, causing failure."
+      },
+      {
+        "question": "Before removing the ScaleStick housing, which step must be completed FIRST?",
+        "options": [
+          "Apply O-ring lubricant to the housing threads",
+          "Open the downstream fixture to full flow",
+          "Verify the system is fully depressurized (0 PSI on gauge)",
+          "Position the replacement cartridge within reach"
+        ],
+        "correctIndex": 2,
+        "explanation": "System depressurization is the critical safety step that must be confirmed before any disassembly."
+      },
+      {
+        "question": "When inserting the new filter cartridge, which direction should the flow arrow point?",
+        "options": [
+          "Downward (toward the sump housing)",
+          "Upward (toward the cap/head unit)",
+          "The arrow direction does not matter",
+          "Sideways (toward the inlet port)"
+        ],
+        "correctIndex": 1,
+        "explanation": "The flow arrow must point UP toward the cap to ensure proper water flow through the filtration media."
+      },
+      {
+        "question": "How should the housing be tightened during reassembly?",
+        "options": [
+          "Use the spanner wrench to tighten as firmly as possible",
+          "Hand-tighten only — approximately 1/4 turn past finger-tight",
+          "Use an adjustable wrench for maximum torque",
+          "Tighten until you hear the O-ring compress"
+        ],
+        "correctIndex": 1,
+        "explanation": "Over-tightening with tools risks cross-threading and O-ring damage. Hand-tightening provides adequate seal."
+      },
+      {
+        "question": "During recommissioning, why is the inlet valve opened slowly?",
+        "options": [
+          "To prevent the cartridge from shifting out of position",
+          "To allow gradual pressurization and controlled air purge without water hammer",
+          "To give the O-ring time to expand",
+          "To test if the downstream fixture is working"
+        ],
+        "correctIndex": 1,
+        "explanation": "Gradual opening prevents water hammer damage and allows trapped air to purge safely."
+      }
+    ]
+  },
+
+  "assets": {
+    "interactiveApp": "interactive_app/index.html",
+    "slidesDirectory": "interactive_app/assets/slides",
+    "slideCount": 18,
+    "videoFile": "interactive_app/assets/procedure_video.mp4",
+    "favicon": "interactive_app/assets/favicon.svg",
+    "posterImage": "interactive_app/assets/dashboard.png"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "SOP Training Site Template",
+  "description": "Professional training site with document libraries, service records tracking, and completion registry. Deployed by the SharePoint Training Site Deployer automation system.",
+  "siteScripts": ["SITE_SCRIPT_ID_PLACEHOLDER"],
+  "webTemplate": "68",
+  "previewImageUrl": "",
+  "previewImageAltText": "SOP Training Site Template Preview",
+  "isDefault": false,
+  "version": 1,
+  "metadata": {
+    "deployerVersion": "1.0.0",
+    "category": "Training & Compliance",
+    "author": "SBB Training Engineering"
+  },
+  "registrationNotes": {
+    "instructions": [
+      "1. First, register the site_script.json using Add-PnPSiteScript",
+      "2. Copy the returned Script ID",
+      "3. Replace SITE_SCRIPT_ID_PLACEHOLDER above with the actual Script ID",
+      "4. Register this site design using Add-PnPSiteDesign",
+      "5. The template will appear in 'From your organization' when creating new sites"
+    ],
+    "powershell": {
+      "registerScript": "Add-PnPSiteScript -Title 'SOP Training Script' -Content (Get-Content './templates/site_script.json' -Raw)",
+      "registerDesign": "Add-PnPSiteDesign -Title 'SOP Training Site Template' -SiteScripts '<SCRIPT_ID>' -WebTemplate CommunicationSite -Description 'Professional training site with compliance tracking'"
+    }
+  }
+}

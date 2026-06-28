@@ -1,0 +1,86 @@
+{
+  "pageTemplate": "procedure_page",
+  "fileName": "Procedure-Guide.aspx",
+  "title": "Procedure Guide — {{MODULE_TITLE}}",
+  "headerLayout": "Plain",
+  "sections": [
+    {
+      "order": 1,
+      "template": "OneColumn",
+      "zoneEmphasis": 3,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h2>⚠️ Critical Safety Warnings</h2><p><strong>DANGER — HIGH PRESSURE SYSTEM</strong></p><p>The SS-10 ScaleStick operates under pressures up to 125 PSI. Before performing any maintenance:</p><ul><li>Verify the system is completely isolated and depressurized (0 PSI gauge confirmation)</li><li>Wear appropriate PPE: safety glasses, chemical-resistant gloves, and steel-toe boots</li><li>Open the pressure relief valve BEFORE attempting to remove any housing components</li><li>Never use power tools for reassembly — hand-tighten only to prevent cross-threading</li><li>Ensure drainage is positioned to capture residual water discharge</li></ul><p>Failure to follow these safety protocols may result in serious injury from high-pressure water discharge, chemical exposure, or equipment damage.</p>"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "template": "TwoColumn",
+      "zoneEmphasis": 0,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h3>🔧 Required Tools & Materials</h3><ul><li>SS-10 replacement filter cartridge (verify model compatibility)</li><li>Filter housing wrench (spanner type, included with unit)</li><li>O-ring lubricant (food-grade silicone, NSF-61 certified)</li><li>Replacement O-ring gasket (check sizing: 3.5\" ID x 4.0\" OD)</li><li>Bucket or drainage pan (minimum 2-gallon capacity)</li><li>Clean lint-free cloths or shop towels</li><li>Adjustable wrench (for inlet/outlet fittings if needed)</li><li>Pressure gauge verification tool (optional, for post-install validation)</li></ul>"
+        },
+        {
+          "type": "image",
+          "column": 2,
+          "imageUrl": "{{SITE_URL}}/Training Assets/{{MODULE_NAME}}/slides/slide_03.png",
+          "altText": "Required tools and materials for SS-10 maintenance"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "template": "OneColumn",
+      "zoneEmphasis": 1,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h2>Phase 1: System Isolation & Depressurization</h2><ol><li><strong>Close the inlet valve</strong> — Rotate the upstream shutoff valve clockwise until fully closed. Verify no water flows from downstream fixtures.</li><li><strong>Relieve system pressure</strong> — Open the pressure relief button/valve on top of the filter housing. You will hear air escape and see residual water drain.</li><li><strong>Open the nearest downstream fixture</strong> — This allows remaining system pressure to bleed through. Wait until all water stops flowing.</li><li><strong>Verify depressurization</strong> — Check the pressure gauge reads 0 PSI. If the unit does not have a built-in gauge, observe that no water sprays when the relief valve is actuated.</li><li><strong>Position drainage</strong> — Place the bucket or drain pan directly beneath the filter housing to catch residual water when the housing is removed.</li></ol>"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "template": "OneColumn",
+      "zoneEmphasis": 0,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h2>Phase 2: Cartridge Extraction</h2><ol><li><strong>Unscrew the filter housing</strong> — Using the spanner wrench, grip the bottom of the clear housing sump and rotate counter-clockwise. Apply steady, even pressure. Do NOT use excessive force.</li><li><strong>Remove the housing</strong> — Once the housing is free, carefully pull it straight down. Residual water will drain into the bucket.</li><li><strong>Extract the old cartridge</strong> — Lift the spent cartridge straight up and out of the housing cap/head unit. Note the orientation of the cartridge's flow direction arrow.</li><li><strong>Inspect the housing</strong> — Clean the interior of the sump housing with a lint-free cloth. Check for cracks, mineral deposits, or discoloration. Replace the housing if damaged.</li><li><strong>Inspect the O-ring seat</strong> — Examine the O-ring groove on the housing cap for debris or scoring. Clean thoroughly.</li></ol>"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "template": "OneColumn",
+      "zoneEmphasis": 1,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h2>Phase 3: New Cartridge Installation & O-Ring Verification</h2><ol><li><strong>Inspect the new cartridge</strong> — Remove it from packaging. Verify the model number matches your system requirements. Check for manufacturing defects.</li><li><strong>Remove and inspect the O-ring</strong> — Carefully remove the existing O-ring from the housing groove. Inspect for cracking, flattening, or deformation. Replace if ANY wear is visible.</li><li><strong>Lubricate the O-ring</strong> — Apply a thin, even coat of food-grade silicone lubricant to the O-ring. This ensures a proper seal and makes future removal easier.</li><li><strong>Seat the O-ring correctly</strong> — Place the O-ring in the groove, ensuring it sits flat without twists or pinches. An improperly seated O-ring is the #1 cause of post-installation leaks.</li><li><strong>Insert the new cartridge</strong> — Place it into the housing with the flow arrow pointing UP (toward the cap). Ensure it sits firmly on the support post.</li><li><strong>Hand-tighten the housing</strong> — Thread the sump housing back onto the cap. Tighten by hand only — approximately 1/4 turn past finger-tight. Do NOT use the wrench for tightening.</li></ol>"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "template": "OneColumn",
+      "zoneEmphasis": 0,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h2>Phase 4: System Recommissioning</h2><ol><li><strong>Close the relief valve</strong> — Ensure the pressure relief button is in the closed position.</li><li><strong>SLOWLY open the inlet valve</strong> — Open the upstream shutoff valve no more than 1/4 turn. Allow water to fill the housing gradually. Listen for air escaping from the downstream fixture.</li><li><strong>Purge trapped air</strong> — Keep the downstream fixture open until water flows steadily with no sputtering or air bubbles (typically 2–3 minutes).</li><li><strong>Fully open the inlet valve</strong> — Once air is purged, slowly open the valve to its full-open position.</li><li><strong>Check for leaks</strong> — Inspect all connections: housing-to-cap seal, inlet fitting, outlet fitting, and relief valve. Wipe all surfaces dry and observe for 5 minutes.</li><li><strong>Verify system pressure</strong> — Check that operating pressure has returned to normal range (typically 40–80 PSI depending on supply).</li><li><strong>Record the service</strong> — Log the cartridge change date, technician name, pressure readings, and any observations in the Service Records log.</li></ol>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "pageTemplate": "home_page",
+  "fileName": "Home.aspx",
+  "title": "{{MODULE_TITLE}}",
+  "headerLayout": "ColorBlock",
+  "headerImageUrl": "{{SITE_URL}}/Training Assets/{{MODULE_NAME}}/slides/slide_01.png",
+  "sections": [
+    {
+      "order": 1,
+      "template": "OneColumnFullWidth",
+      "zoneEmphasis": 2,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h2>Training Overview</h2><p>{{MODULE_DESCRIPTION}}</p><p>This interactive training module covers the complete standard operating procedure including safety protocols, step-by-step procedure simulation, multimedia demonstrations, compliance assessment, and field verification logging.</p>"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "template": "TwoColumn",
+      "zoneEmphasis": 0,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h3>📋 Training Objectives</h3><ul><li>Understand safety hazards and PPE requirements</li><li>Execute the complete maintenance procedure</li><li>Verify system integrity post-maintenance</li><li>Pass the compliance knowledge assessment (100%)</li><li>Log field service records for audit compliance</li></ul>"
+        },
+        {
+          "type": "text",
+          "column": 2,
+          "content": "<h3>⚡ Quick Navigation</h3><ul><li><a href='Procedure-Guide.aspx'>Step-by-Step Procedure Guide</a></li><li><a href='Media-Resources.aspx'>Training Slides & Video</a></li><li><a href='Assessment.aspx'>Knowledge Assessment</a></li><li><a href='Field-Logs.aspx'>Field Verification Logs</a></li></ul><p><strong>Estimated Completion Time:</strong> 45–60 minutes</p>"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "template": "OneColumn",
+      "zoneEmphasis": 1,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h3>🎯 Interactive Training Application</h3><p>For the complete interactive experience including the pressure simulator, animated procedure walkthrough, and printable completion certificate, launch the full training application below.</p><p><a href='{{APP_URL}}/index.html' target='_blank' style='font-weight: bold;'>▶ Launch Interactive Training App</a></p>"
+        }
+      ]
+    }
+  ]
+}

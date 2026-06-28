@@ -1,0 +1,61 @@
+{
+  "pageTemplate": "assessment_page",
+  "fileName": "Assessment.aspx",
+  "title": "Knowledge Assessment — {{MODULE_TITLE}}",
+  "headerLayout": "Plain",
+  "sections": [
+    {
+      "order": 1,
+      "template": "OneColumn",
+      "zoneEmphasis": 2,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h2>📝 Compliance Knowledge Assessment</h2><p>Before receiving your completion certificate, you must demonstrate understanding of the safety protocols, procedure steps, and quality verification processes covered in this training module.</p>"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "template": "TwoColumn",
+      "zoneEmphasis": 0,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h3>Assessment Requirements</h3><ul><li><strong>Format:</strong> 5 multiple-choice questions</li><li><strong>Passing Score:</strong> 100% (all questions correct)</li><li><strong>Attempts:</strong> Unlimited — you may retake the assessment</li><li><strong>Time Limit:</strong> None — review the procedure guide as needed</li><li><strong>Certificate:</strong> Generated upon successful completion</li></ul>"
+        },
+        {
+          "type": "text",
+          "column": 2,
+          "content": "<h3>Topics Covered</h3><ul><li>High-pressure system safety hazards and PPE requirements</li><li>Proper cartridge preparation and compatibility verification</li><li>O-ring orientation and sealing validation</li><li>Hand-tightening protocol (no power tools)</li><li>System recommissioning and air purge procedures</li></ul>"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "template": "OneColumn",
+      "zoneEmphasis": 1,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h2>🎯 Take the Assessment</h2><p>The interactive assessment is available in the full training application. Click below to launch the assessment module. Upon passing, you will be able to generate and print your personalized completion certificate.</p><p><a href='{{APP_URL}}/index.html#quiz' target='_blank' style='font-weight: bold;'>▶ Launch Assessment</a></p>"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "template": "OneColumn",
+      "zoneEmphasis": 0,
+      "webParts": [
+        {
+          "type": "text",
+          "column": 1,
+          "content": "<h2>✅ Post-Assessment Compliance Checklist</h2><p>After passing the assessment and completing the practical procedure, verify the following before signing off:</p><ol><li>☐ All safety warnings have been reviewed and acknowledged</li><li>☐ Correct PPE was worn throughout the procedure</li><li>☐ New cartridge model number matches system specifications</li><li>☐ O-ring was inspected, lubricated, and properly seated</li><li>☐ Housing was hand-tightened only (no wrench for tightening)</li><li>☐ System was slowly recommissioned with full air purge</li><li>☐ All connections inspected for leaks (5-minute observation)</li><li>☐ Operating pressure verified within normal range</li><li>☐ Service record logged in the Field Verification system</li><li>☐ Supervisor sign-off obtained (if required by site policy)</li></ol>"
+        }
+      ]
+    }
+  ]
+}
